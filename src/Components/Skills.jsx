@@ -16,7 +16,7 @@ export default function Skills() {
             <div className="col-5"> </div>
             <div className="col-6 "><h3 className="skills-h3" >My Skills</h3></div>
         </div>
-        <Swiper spaceBetween={30} pagination={{
+        <Swiper spaceBetween={30}  pagination={{
   "clickable": true
 }} className="mySwiper">
   <SwiperSlide> 
@@ -43,6 +43,12 @@ export default function Skills() {
                  </li>
                <li>
                      <h6>React js</h6>
+                     <div className="progress-content">
+                         <div className="skill-progress1" data-progress="95"></div>
+                     </div>
+                 </li>
+                 <li>
+                     <h6>Wordpress</h6>
                      <div className="progress-content">
                          <div className="skill-progress1" data-progress="95"></div>
                      </div>

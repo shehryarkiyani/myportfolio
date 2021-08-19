@@ -10,6 +10,9 @@ import Hero from './Components/Hero'
 import About  from './Components/About';
 import { Route,Switch } from 'react-router-dom';
 import Skills from './Components/Skills';
+import Services from './Components/Services';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 import $ from 'jquery'
 class App extends Component{
   componentDidMount(){
@@ -36,6 +39,17 @@ class App extends Component{
          
         })
       }
+      if(top>=1260){
+    
+        $('.services-h3').addClass('animate__animated animate__slideInDown')
+      }
+      if(top>=1268){
+        $('.service-single').addClass('animate__animated animate__zoomIn')
+      }
+      if(top>=2438){
+        $('#Mycontact').addClass('animate__animated animate__slideInDown')
+        $('.contact-top').addClass('animate__animated animate__slideInDown')
+      }
       console.log(top)
     })
     
@@ -53,10 +67,10 @@ class App extends Component{
        <About/>
 
     <Skills/>
+  <Services/>
   
-  
-    
-   
+    <Contact/>
+   <Footer/>
      
       </>
     )
