@@ -14,6 +14,27 @@ body{
   line-height: 1.5;
  
 }
+.section-header{
+  margin-bottom: 20px;
+}
+.section-header h3{
+  font-family: Roboto Slab;
+font-size: 40px;
+position: relative;
+display: inline-block;
+}
+.section-header h3::after{
+  content: "";
+  bottom: -5px;
+  height: 3px;
+  background-color: #E84118;
+  width: 100%;
+  position: absolute;
+ left: 0px;
+  
+  
+  border-radius: 25px;
+}
 
 .section-padding{
   padding: 120px 0;
@@ -42,6 +63,7 @@ header{
 nav a,nav a:hover{
   color: #fff;
 }
+
 li.nav-item a.nav-link{
   position: relative;
   display: inline-block;
@@ -232,6 +254,7 @@ text-decoration: none;
 display: inline-block;
 position: relative;
   }
+  
   .mycard h2::after{
     content: "";
     bottom: -5px;
@@ -278,9 +301,8 @@ position: relative;
   font-family: 'Poppins', sans-serif;
   color:rgb(168, 168, 168);
 }
-.mycard ul li{
-  margin-bottom: 35px;
-}
+
+
 .skill-progress1::before{
   content: attr(data-progress);
   position: absolute;
@@ -437,6 +459,7 @@ position: relative;
 }.service-content{
   margin-top: 60px;
   z-index: 10;
+  width: 100%;
 }
 .service-single{
   border: 1px solid #ddd;
@@ -446,31 +469,56 @@ position: relative;
  transition: all .3s ease;
  border-radius: 5px;
  margin-bottom: 20px;
+ position: relative;
+}.card{
+  margin-bottom: 30px ;
+  transition: all .3s ease;
+  box-shadow: 0 0 10px rgb(0, 0, 0,0.3);
+  border: 1px solid transparent !important;
+  position: relative;
+  background-color: #fff;
+  
+}
+.card :hover .service-name::after{
+  width: 100%;
+}
+.card:hover{
+  transform: scale(1.1);
+  background-color: #333 !important;
+
 }
 .service-single:hover{
   background-color: #333;
   border: 1px solid #333;
   
 }
-.service-single:hover .service-name{
+.card:hover .service-name{
 color: #ddd;
+}
+.card:hover .icon-container .service-icon{
+  transform: scale(1.2);
+  background-color: #fff;
+  color: #333;
+}
+.card:hover .icon-container .service-icon i{
+  transform: rotate(360deg);
 }
 .service-single:hover .service-name::after{
   width: 100%;
 }
-.service-single:hover .service-icon{
-  color: #333;
-  background-color: #fff;
-  transform: scale(1.2)rotate(360deg);
-}
-.service-icon{
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  color:#fff;
+
+.icon-container .service-icon{
   background-color: #E84118;
+  color: white;
+  padding: 10px 15px;
   border-radius: 50%;
-  transition: all .3s ease;
+  
+}
+.icon-container{
+ 
+  margin-top: -45px;
+  
+  
 }
 .service-name{
   font-family: Roboto Slab;
@@ -576,6 +624,131 @@ footer{
 strong{
   font-family: Roboto Slab;
   margin-right: 5px;
+}
+
+.item-content img{
+  width: 100%;
+  transition: all .5s ease;
+  transform: scale(1)rotate(0deg);
+}
+.portfolio-item .col-md-3 img{
+  height: 200px;
+}
+.portfolio-item .col-md-6 img{
+  height: 200px;
+}
+.item-content{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  
+}
+.portfolio .container .row ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  z-index: 1;
+}
+.portfolio .container .row ul li a{
+  text-decoration: none;
+  color: white;
+  
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+
+}
+.active-tab{
+  background-color: #e84118 !important;
+}
+.portfolio .container .row ul li{
+  margin-right: 10px;
+}
+.show{
+  opacity: 1;
+  display: flex;
+}
+.hide{
+  opacity: 0;
+  display: none;
+}
+.img-overlay{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  content: '';
+  overflow: hidden;
+  /* background-color: #fff;
+  color: #333; */
+}
+.img-overlay::before{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(80, 75, 75, 0.8);
+  content: '';
+  left: -110%;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.portfolio-item .info{
+  z-index: 2;
+}
+.portfolio-item .info .description{
+  color: #fff;
+  opacity: 0;
+  font-family: Poppins;
+}
+.portfolio-item:hover .info .description,.item-icon i{
+  opacity: 1;
+}
+.portfolio-item:hover .img-overlay::before{
+  left: 0;
+}
+.item-icon i{
+  color: white;
+  opacity: 0;
+}
+.Design{
+  position: absolute;
+  top: 0;
+}
+.Work-container{
+  position: relative;
+}
+.WebDevelopment{
+  position: absolute;
+  top: 0;
+}
+.portfolio{
+  background: url('../src/img/portfolio/bg1.jpg');
+  color: #fff;
+  position: relative;
+  width: 100%;
+  
+}
+.portfolio::before{
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0,0.7);
+}
+
+.portfolio-item:hover .item-content img{
+  transform: scale(1.2)rotate(10deg);
+}
+.portfolio-container{
+  position: relative;
 }
 @media (max-width:991px){
     

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+
 import Navbar from './Components/Navbar';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
@@ -13,6 +14,7 @@ import Skills from './Components/Skills';
 import Services from './Components/Services';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import SampleWork from './Components/SampleWork';
 import $ from 'jquery'
 class App extends Component{
   componentDidMount(){
@@ -50,7 +52,7 @@ class App extends Component{
         $('#Mycontact').addClass('animate__animated animate__slideInDown')
         $('.contact-top').addClass('animate__animated animate__slideInDown')
       }
-      console.log(top)
+      
     })
     
    
@@ -68,7 +70,7 @@ class App extends Component{
 
     <Skills/>
   <Services/>
-  
+  <SampleWork/>
     <Contact/>
    <Footer/>
      
