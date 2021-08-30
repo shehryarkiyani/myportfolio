@@ -15,6 +15,7 @@ import Services from './Components/Services';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import SampleWork from './Components/SampleWork';
+
 import $ from 'jquery'
 class App extends Component{
   componentDidMount(){
@@ -41,16 +42,26 @@ class App extends Component{
          
         })
       }
-      if(top>=1260){
-    
-        $('.services-h3').addClass('animate__animated animate__slideInDown')
-      }
+     
       if(top>=1268){
         $('.service-single').addClass('animate__animated animate__zoomIn')
       }
-      if(top>=2438){
+      if(top>=1820){
+        $('.services-h3').addClass('animate__animated animate__slideInDown')
+        $('.cards').addClass('animate__animated animate__zoomIn')
+      }
+      if(top>=4400){
+      
         $('#Mycontact').addClass('animate__animated animate__slideInDown')
         $('.contact-top').addClass('animate__animated animate__slideInDown')
+        $('.contact-form').addClass('animate__animated animate__zoomIn')
+      }
+      if(top>=3200){
+        $('.work-heading').addClass('animate__animated animate__slideInDown')
+        $('.work-tabs').addClass('animate__animated animate__zoomIn')
+      }
+      if(top>=3600){
+        $('.my-item').addClass('animate__animated animate__zoomIn')
       }
       
     })
@@ -68,10 +79,11 @@ class App extends Component{
        <Hero/>
        <About/>
 
-    <Skills/>
+       <Skills/>
   <Services/>
   <SampleWork/>
     <Contact/>
+    
    <Footer/>
      
       </>

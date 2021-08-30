@@ -209,7 +209,7 @@ text-decoration: none;
 .skills{
   position: relative;
   clip-path: polygon(0% 0%,100% 0,100% 90%,50% 100%,0% 90% );
-  height: 110vh;
+ 
   background-image: url(../src/img/bg.jpg);
   z-index: 1;
  
@@ -300,6 +300,9 @@ position: relative;
 .mycard ul li h6{
   font-family: 'Poppins', sans-serif;
   color:rgb(168, 168, 168);
+}
+.mycard ul li {
+  padding-bottom: 20px;
 }
 
 
@@ -761,4 +764,51 @@ strong{
   }
   
 }
+@media(max-width:764px){
+  .about-h3{
+   margin-left: -40px;
+   margin-bottom: 30px !important;
+  }
+  .img-container{
+    margin-left: -50px !important;
+  }
+  .social-icons{
+    display: flex;
+    justify-content: center;
+  }
+ .sc-h-c{
+   margin-left: -40px;
+ }
+}
+@media(max-width:608px){
+  .welcome{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .type{
+    font-size: 30px;
+    margin-top: 20px;
+  }
+}
+@media(max-width:576px){
+  .img-container{
+    margin-left: -80px !important;
+  }
+}
+@media (max-width:500px){
+  .img-container{
+    margin-left: -10px !important;
+  }
+}
+@media (max-width:410px){
+  .portfolio .container .row ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 5px 4px !important;
+    border-radius: 50px;
+    cursor: pointer;
+}
+  }
 

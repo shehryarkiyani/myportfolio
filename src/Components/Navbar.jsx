@@ -12,7 +12,7 @@ export default function Navbar() {
                         <span className="navbar-toggler-icon"></span>
                       </button>
                     <div className="collapse navbar-collapse " id="menu">
-                        <ul className="navbar-nav margin-left ">
+                        <ul className="navbar-nav m-auto ">
                             <li className="nav-item active"><Link to="main-section" className="nav-link">Home</Link></li>
                             <li className="nav-item"><Link to="about" className="nav-link">About</Link></li>
                             <li className="nav-item"><Link to="skills" className="nav-link">Skills</Link></li>

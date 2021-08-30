@@ -39,10 +39,10 @@ var c=event.target.getAttribute('data-category')
            <div className="container">
                <div className="row">
                    <div className="section-header text-center">
-                       <h3>My Work</h3>
+                       <h3 className="work-heading">My Work</h3>
                    </div>
                </div>
-               <div className="row" >
+               <div className="row work-tabs" >
                    <ul>
                        <li><a  className="tabs active-tab" data-category="All" data-id="1" onClick={ChangeTab}  >All</a></li>
                        <li><a  className="tabs" data-category="Web Design" data-id="2" onClick={ChangeTab}  >Web Design</a></li>

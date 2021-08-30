@@ -11,7 +11,7 @@ function Services() {
             <div className="container">
        <div  className="row ">
            <div className="col-5"> </div>
-           <div className="col-6 "><h3 className="services-h3" >Services</h3></div>
+           <div className="col-6 sc-h-c"><h3 className="services-h3" >Services</h3></div>
        </div>
        <div className="service-content">
           <div className="row">

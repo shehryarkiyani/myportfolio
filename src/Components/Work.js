@@ -20,4 +20,5 @@ const mywork=[
     {category:"Web Development",
     img:pic4},
 ]
+
 export default mywork;
